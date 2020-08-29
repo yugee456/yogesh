@@ -22,12 +22,17 @@ class MiddleScreen extends StatelessWidget {
               enlargeCenterPage: true,
               scrollDirection: Axis.horizontal,
               items: [
-                ProjectWidget(title: "Wallpaper+"),
-                ProjectWidget(title: "NewsMania"),
-                ProjectWidget(title: "Bestoo"),
-                ProjectWidget(title: "Covid-19-Tracker"),
-
-              ],
+                 ProjectWidget(title: "Wallpaper+").mdClick(() {
+                      launch("https://github.com/yugee456/wallpaperplus-.git");
+                    }).make(),
+                    ProjectWidget(title: "NewsMania").mdClick(() {
+                      launch("https://github.com/yugee456/NewsMania.git");
+                    }).make(),
+                    ProjectWidget(title: "Bestoo"),
+                    ProjectWidget(title: "Covid-19-Tracker").mdClick(() {
+                      launch("https://github.com/yugee456/covid-19tracker.git");
+                    }).make()
+               ],
               height: 170,
               viewportFraction: context.isMobile ? 0.75 : 0.4,
               autoPlay: true,
