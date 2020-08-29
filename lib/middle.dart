@@ -23,14 +23,14 @@ class MiddleScreen extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               items: [
                  ProjectWidget(title: "Wallpaper+").mdClick(() {
-                      launch("https://github.com/yugee456/wallpaperplus-.git");
+                      launch("https://tinyurl.com/y5kexf2o");
                     }).make(),
                     ProjectWidget(title: "NewsMania").mdClick(() {
-                      launch("https://github.com/yugee456/NewsMania.git");
+                      launch("https://tinyurl.com/y4b8axey");
                     }).make(),
                     ProjectWidget(title: "Bestoo"),
                     ProjectWidget(title: "Covid-19-Tracker").mdClick(() {
-                      launch("https://github.com/yugee456/covid-19tracker.git");
+                      launch("https://tinyurl.com/yyoqkryd");
                     }).make()
                ],
               height: 170,
